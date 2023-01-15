@@ -5,9 +5,14 @@ two_digit_number = input("Type a two digit number: ")
 ####################################
 # Write your code below this line 👇
 
-digit_one = two_digit_number[0]
-digit_two = two_digit_number[1]
+# Check the data type of two_digit_number.
+print(type(two_digit_number))
 
-total = int(digit_one) + int(digit_two)
+# Get the first and second digit using subscripting, then convert string to integer.
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
+
+# Add the two digits together.
+total = first_digit + second_digit
 
 print(total)
