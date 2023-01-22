@@ -14,5 +14,10 @@ total_bill = bill + total_tip_amount
 bill_per_person = total_bill / people
 final_amount = round(bill_per_person, 2)
 
+# how to make sure that we print two decimal points even if the second one is zero
+# example with the input 150$, 5 people and 12% tip yield 33.6, and we want 33.60
+# it's a formatting problem not a math problem
+
+final_amount = "{:.2f}".format(bill_per_person)
 
 print(f"Each person should pay: ${final_amount}")
